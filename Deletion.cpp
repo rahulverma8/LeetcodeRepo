@@ -80,11 +80,7 @@ int main() {
   InsertAtLast(tail,34);
   InsertInBetween(tail,head,333,1);
   InsertInBetween(tail,head,445,4);
-  // InsertAtFront(head,33);
-  // InsertAtFront(head,44);
-  // InsertAtFront(head,88);
-  // InsertAtLast(head,66);
-    InsertInBetween(tail,head,111,4);
+  InsertInBetween(tail,head,111,4);
   printList(head);
   DeleteNode(head,tail,1);
   printList(head);
