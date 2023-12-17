@@ -44,9 +44,6 @@ class Solution {
 
            s = s.substring(1,s.length());
        } 
-
-        int n = extractNum(s,signedOne);
-
-       return n;
+       return extractNum(s,signedOne);
     }
 }
