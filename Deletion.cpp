@@ -33,7 +33,6 @@ void  InsertAtLast(Node* &tail,int data){
 }
 
 void InsertInBetween(Node* &tail,Node* &head,int data,int pos){
-  
   if(pos==1){
     InsertAtFront(head,data) ;
     return;
@@ -74,7 +73,6 @@ int main() {
 
   Node* head = node1;
   Node* tail = node1;
-  
   InsertAtLast(tail,23);
   InsertAtFront(head,90);
   InsertAtLast(tail,34);
