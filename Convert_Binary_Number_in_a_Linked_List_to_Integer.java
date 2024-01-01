@@ -7,14 +7,21 @@ class Solution {
              len++;
              temp=temp.next;
              }
-        int power = 1;
-        for(int i=0;i<len;i++) power *= 2; 
-
         temp=head;
-        for(int i=power;i>0 && temp!=null;i/=2){
+        for(int i=(int)Math.pow(2,len);i>0 && temp!=null;i/=2){
             res += i*(temp.val);
             temp = temp.next;
         }
         return res;
     }
 }
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
