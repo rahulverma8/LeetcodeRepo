@@ -1,10 +1,11 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int l=0,r=nums.length-1,mid=0;
+        int l=0,r=nums.length-1,mid;
 
-        if(target<nums[0]) return 0;
+        if(target<nums[0]) return 0;    //edge cases
         if(target>nums[r]) return r+1;
-        
+
+        //binary search
         while(l<=r){
             mid=(l+r)/2;
             if(nums[mid]==target) return mid;
