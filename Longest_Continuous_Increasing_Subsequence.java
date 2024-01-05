@@ -1,8 +1,7 @@
 class Solution {
-    public int findLengthOfLCIS(int[] nums) {
-        int max=1;
+    public int findLengthOfLCIS(int[] nums) {    // O(n) solution
+        int max=1; //min element is 1
         int count=1;
-
         for(int i=1;i<nums.length;i++){
             if(nums[i-1] < nums[i]) count++;
             else{
