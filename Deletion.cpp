@@ -80,6 +80,7 @@ int main() {
   printList(head);
   DeleteNode(head,tail,1);
   printList(head);
-  cout << "\nhead " << head->data << " tail "<< tail->data << endl;
+  cout << "\nhead " << head->data ;
+  cout << " tail "<< tail->data << endl;
   return 0;
 }
