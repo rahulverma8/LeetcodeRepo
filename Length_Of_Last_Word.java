@@ -7,11 +7,8 @@ public:
             if(s.at(i)!=' ')
                 gotword  = 1;
             if(gotword){
-
-                if(s.at(i)==' ')
-                    break;
-                else
-                    wordlen++;
+                if(s.at(i)==' ') break;
+                else wordlen++;
                 }
         }
         return wordlen;
